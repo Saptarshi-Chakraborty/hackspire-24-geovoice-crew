@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "frontend": "cd frontend/ && npm run dev",
+    "backend": "cd backend/ && npm run dev",
+    "goToFrontend": "cd .\\frontend\\",
+    "goToBackend": "cd .\\backend\\",
+    "updatePackages": "npm install",
+    "startDevServer": "npm run dev",
+    "updateFrontendPackages": "cd frontend/ && npm install",
+    "updateBackendPackages": "cd backend/ && npm install",
+    "update": "npm run updatePackages && npm run updateFrontendPackages && npm run updateBackendPackages",
+    "both": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
